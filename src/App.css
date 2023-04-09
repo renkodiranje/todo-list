@@ -4,7 +4,11 @@
 }
 
 .container {
-  background: linear-gradient(to right bottom, orange, blue);
+  background: linear-gradient(
+    to right bottom,
+    rgb(242, 194, 166),
+    rgb(243, 245, 246)
+  );
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -13,7 +17,7 @@
 }
 
 .app-wrapper {
-  background-color: blueviolet;
+  background-color: rgb(98, 199, 224);
   min-width: 450px;
   min-height: 650px;
   padding: 30px;
@@ -24,7 +28,7 @@
 }
 
 .header h1 {
-  color: aqua;
+  color: rgb(241, 240, 221);
   text-align: center;
   margin: 30px 0;
 }
@@ -35,10 +39,13 @@
   padding: 15px;
   margin-right: 25px;
   font-size: 20px;
-  color: rgb(244, 244, 60);
-  background-color: rgb(57, 101, 201);
-  border: 1px solid rgb(226, 226, 75);
+  color: white;
+  background-color: rgb(153, 220, 237);
+  border: 1px solid white;
   border-radius: 10px;
+}
+.task-input:focus {
+  background-color: rgb(242, 194, 166);
 }
 
 .button-add {
@@ -47,16 +54,20 @@
   font-size: 20px;
   border-radius: 10px;
   border: 0;
-  background-color: rgb(17, 39, 127);
+  color: white;
+  background-color: rgb(73, 157, 205);
   cursor: pointer;
 }
 .button-add:hover {
-  color: rgb(226, 226, 75);
+  background-color: rgb(46, 141, 196);
 }
 .list-item {
   display: flex;
-  margin: 20px 0;
-  border: 1px solid pink;
+  margin: 40px 0;
+  margin-left: 10px;
+  margin-right: 40px;
+  outline: 15px solid rgb(241, 184, 151);
+  background-color: rgb(241, 184, 151);
   border-radius: 10px;
   max-height: 30px;
 }
@@ -78,14 +89,14 @@
   text-decoration-style: solid;
   text-decoration-line: line-through;
   text-decoration-color: darkblue;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .list {
   width: 220px;
   background-color: transparent;
   border: none;
-  color: rgb(241, 230, 12);
+  color: rgb(241, 241, 223);
   font-size: 20px;
   padding-left: 10px;
   margin-right: 15px;
@@ -96,6 +107,6 @@ button:focus {
   outline: none;
 }
 .img {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25npmpx;
 }
