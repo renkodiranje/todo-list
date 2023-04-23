@@ -18,6 +18,7 @@
 
 .app-wrapper {
   background-color: rgb(98, 199, 224);
+
   min-width: 450px;
   min-height: 650px;
   padding: 30px;
@@ -108,5 +109,96 @@ button:focus {
 }
 .img {
   width: 25px;
-  height: 25npmpx;
+  height: 25px;
+}
+@media screen and (max-width: 500px) {
+  .container {
+    background: linear-gradient(
+      to right bottom,
+      rgb(242, 194, 166),
+      rgb(243, 245, 246)
+    );
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img {
+    width: 15px;
+    height: 15px;
+  }
+  .app-wrapper {
+    background-color: rgb(98, 199, 224);
+
+    min-width: 150px;
+    min-height: 550px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 3px 6px 40px rgb(10, 10, 9);
+    margin-bottom: 10px;
+  }
+
+  .header h1 {
+    color: rgb(241, 240, 221);
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  .task-input {
+    outline: none;
+    width: 160px;
+    padding: 5px;
+    margin-right: 0;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(153, 220, 237);
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+
+  .button-add {
+    width: 50px;
+    padding: 10px 10px;
+    font-size: 16px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    background-color: rgb(73, 157, 205);
+    cursor: pointer;
+  }
+  .button-add:hover {
+    background-color: rgb(46, 141, 196);
+  }
+  .list-item {
+    display: flex;
+    margin: 40px 0;
+    margin-left: 20px;
+    margin-right: 10px;
+    outline: 15px solid rgb(241, 184, 151);
+    background-color: rgb(241, 184, 151);
+    border-radius: 10px;
+    max-height: 30px;
+  }
+
+  .button-complete,
+  .button-delete,
+  .button-edit {
+    font-size: 16px;
+
+    margin-top: -65px;
+    padding: 5px;
+  }
+
+  .list {
+    width: 100px;
+    background-color: transparent;
+    border: none;
+    color: rgb(241, 241, 223);
+    font-size: 14px;
+    padding-left: 5px;
+    margin-right: 8px;
+  }
 }
